@@ -13,6 +13,10 @@ This Application allows users to create a team file by using a command-line. The
 * [License](#license)
 
 ## Features
+* Create a team file by using a command-line 
+
+![Screenshot](Develop/assets/images/command-lineQuestions.png)
+
 * Manager's card 
 
 ![Screenshot](Develop/assets/images/manager.png)
