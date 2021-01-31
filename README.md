@@ -13,28 +13,28 @@ This Application allows users to create a team file by using a command-line. The
 * [License](#license)
 
 ## Features
-* Manager card 
+* Manager's card 
 
 ![Screenshot](Develop/assets/images/manager.png)
 
-* Engineer card
+* Engineer's card
 
 ![Screenshot](Develop/assets/images/engineer.png)
 
-* Intern card
+* Intern's card
 
 ![Screenshot](Develop/assets/images/intern.png)
 
-* Generated team  
+* Generated the whole team's card 
 
-![Screenshot](Develop/assets/images/app.png)
+![Screenshot](Develop/assets/images/team.png)
 
 ## Installation 
 * Clone this repository.
 * Open repository in your browser.
 * Follow instructions on the video:
 
-
+https://drive.google.com/file/d/1KQdtzboYQuF70n4BoCBkvYYs0ca7xSMb/view?usp=sharing
 
 ## Tests
 
