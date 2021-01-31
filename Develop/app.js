@@ -67,10 +67,11 @@ function appMenu() {
                 }
             }
         
-        ]).then(answers => {
-            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOffice);
+        ])
+        .then(answers => {
+            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             teamMembers.push(manager);
-            idArray.push(asnwers.managerId);
+            idArray.push(answers.managerId);
             createTeam();
         });   
 }
@@ -89,7 +90,7 @@ function createTeam() {
         }
     ]).then(choice => {
         switch(choice.memberType){
-            case "Ingineer":
+            case "Engineer":
                 addEngineer();
                 break;
             case "Intern":
@@ -150,10 +151,10 @@ function createTeam() {
             }
         }
          
-     ]).then(asnwers => {
-         const engineer = new Engineer(asnwers.engineerName, answers.engineerEmail, answers.engineerId, answers.ingeneerGithub);
+     ]).then(answers => {
+         const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
          teamMembers.push(engineer);
-         idArray.push(engineer.engineerId);
+         idArray.push(answers.engineerId);
          createTeam();
      });
  }
@@ -207,10 +208,10 @@ function createTeam() {
            }
        }
         
-    ]).then(asnwers => {
-        const intern = new Intern(asnwers.internName, answers.internEmail, answers.internId, answers.internSchool);
+    ]).then(answers => {
+        const intern = new Intern(answers.internName, answers.internId,  answers.internEmail, answers.internSchool);
         teamMembers.push(intern);
-        idArray.push(intern.internId);
+        idArray.push(answers.internId);
         createTeam();
     });
 }
